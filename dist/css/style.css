@@ -1,0 +1,29 @@
+.general {
+  background-color: azure;
+  height: 99vh;
+}
+.general__wrap {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 99vh;
+}
+.general__findblock {
+  border: 1px solid red;
+  height: 30%;
+}
+.general__showblock {
+  border: 1px solid red;
+  display: flex;
+  height: 70%;
+}
+.general__datablock {
+  border: 1px solid red;
+  height: 100%;
+  width: 50%;
+}
+.general__animationsblock {
+  border: 1px solid red;
+  height: 100%;
+  width: 50%;
+}

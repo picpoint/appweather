@@ -11,7 +11,27 @@
   }
   &__findblock {
     border: @border;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 30%;
+    input {
+      border-radius: 5px;
+      width: 350px;
+      height: 30px;
+      font-size: 1.2rem;
+      padding-left: 15px;
+    }
+    button {
+      border: 1px solid black;
+      font-size: 1rem;
+      margin-top: 30px;
+      border-radius: 5px;
+      width: 180px;
+      height: 40px;
+      cursor: pointer;
+    }
   }
   &__showblock {
     border: @border;

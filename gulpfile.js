@@ -26,9 +26,20 @@ gulp.task('htmlmin', () => {
 });
 
 
-gulp.task('watch', ['less', 'htmlmin', 'browserSync'], () => {
+gulp.task('js', () => {
+  return gulp.src('./src/js/*.js')
+    .pipe(gulp.dest('./public/js'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
+
+
+gulp.task('watch', ['less', 'htmlmin', 'js', 'browserSync'], () => {
   gulp.watch('./src/less/style.less', ['less']);
   gulp.watch('./src/*.html', ['htmlmin']);
+  gulp.watch('./src/js/*.js', ['js']);
 });
 
 

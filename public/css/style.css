@@ -39,8 +39,16 @@
 }
 .general__datablock {
   border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
   width: 50%;
+}
+.general__datablock span {
+  border: 1px solid green;
+  display: flex;
+  width: 70%;
+  white-space: normal;
 }
 .general__animationsblock {
   border: 1px solid red;

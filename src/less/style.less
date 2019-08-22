@@ -40,8 +40,17 @@
   }
   &__datablock {
     border: @border;
+    display: flex;
+    flex-wrap: wrap;
     height: 100%;
     width: 50%;
+    span {
+      border: 1px solid green;
+      display: flex;
+      width: 70%;
+      white-space: normal;
+
+    }
   }
   &__animationsblock {
     border: @border;

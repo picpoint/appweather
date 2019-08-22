@@ -4,13 +4,13 @@
   background-color: azure;
   height: 99vh;
   &__wrap {
-    border: @border;
+    //border: @border;
     display: flex;
     flex-direction: column;
     height: 99vh;
   }
   &__findblock {
-    border: @border;
+    //border: @border;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,34 +24,123 @@
       padding-left: 15px;
     }
     button {
-      border: 1px solid black;
+      //border: 1px solid black;
       font-size: 1rem;
       margin-top: 30px;
       border-radius: 5px;
       width: 180px;
       height: 40px;
       cursor: pointer;
+      outline: none;
     }
   }
   &__showblock {
-    border: @border;
+    //border: @border;
     display: flex;
     height: 70%;
   }
   &__datablock {
     border: @border;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 100%;
     width: 50%;
-    span {
-      border: 1px solid green;
-      display: flex;
-      width: 70%;
-      white-space: normal;
-
-    }
   }
+
+  &__name {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  &__namedesc{
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.3rem;
+  }
+  &__nameCity {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  &__temperaturs {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  &__tempdesc {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.3rem;
+  }
+  &__temp {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  &__pressure {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  &__pressdesc {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.3rem;
+  }
+  &__press {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  &__humidity {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  &__humiddesc {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.3rem;
+  }
+  &__humid {
+    border: @border;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+
+
+
+
+
+
   &__animationsblock {
     border: @border;
     height: 100%;

@@ -1,3 +1,24 @@
+.gnrlmixin {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.gnrldescmixin {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  font-size: 1.3rem;
+}
+.gnrlcitymixin {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
 .general {
   background-color: azure;
   height: 99vh;
@@ -45,20 +66,20 @@
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .general__namedesc {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 200px;
   font-size: 1.3rem;
 }
 .general__nameCity {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 250px;
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -66,20 +87,20 @@
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .general__tempdesc {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 200px;
   font-size: 1.3rem;
 }
 .general__temp {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 250px;
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -87,20 +108,20 @@
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .general__pressdesc {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 200px;
   font-size: 1.3rem;
 }
 .general__press {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 250px;
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -108,20 +129,83 @@
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .general__humiddesc {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 200px;
   font-size: 1.3rem;
 }
 .general__humid {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.general__wind {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.general__winddesc {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  font-size: 1.3rem;
+}
+.general__wnd {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.general__clouds {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.general__cloudsdesc {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  font-size: 1.3rem;
+}
+.general__clds {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.general__visibility {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.general__vsbltdesc {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  font-size: 1.3rem;
+}
+.general__vsblt {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 250px;
   font-size: 1.5rem;
   font-weight: bolder;
 }

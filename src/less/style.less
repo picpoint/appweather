@@ -1,23 +1,23 @@
 @import "var.less";
 
-
 .gnrlmixin {
-  border: @border;
+  //border: @border;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 
 .gnrldescmixin {
-  border: @border;
+  //border: @border;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 
 .gnrlcitymixin {
-  border: @border;
+  //border: @border;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -27,7 +27,7 @@
 
 
 .general {
-  background-color: azure;
+  background-color: #b2baba;
   height: 99vh;
   &__wrap {
     display: flex;
@@ -64,11 +64,25 @@
     height: 70%;
   }
   &__datablock {
-    border: @border;
+    //border: @border;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 50%;
+  }
+
+  &__weather {
+    .gnrlmixin();
+  }
+  &__weatherdesc {
+    .gnrldescmixin();
+  }
+  &__icon {
+    .gnrlcitymixin();
+    img {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__name {
@@ -147,7 +161,7 @@
 
 
   &__animationsblock {
-    border: @border;
+    //border: @border;
     height: 100%;
     width: 50%;
   }

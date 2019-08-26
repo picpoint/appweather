@@ -1,18 +1,16 @@
 .gnrlmixin {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .gnrldescmixin {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .gnrlcitymixin {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -20,7 +18,7 @@
   font-weight: bolder;
 }
 .general {
-  background-color: azure;
+  background-color: #b2baba;
   height: 99vh;
 }
 .general__wrap {
@@ -56,27 +54,47 @@
   height: 70%;
 }
 .general__datablock {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 50%;
 }
+.general__weather {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.general__weatherdesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  font-size: 1.3rem;
+}
+.general__icon {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.general__icon img {
+  width: 60px;
+  height: 60px;
+}
 .general__name {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__namedesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__nameCity {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -84,20 +102,18 @@
   font-weight: bolder;
 }
 .general__temperaturs {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__tempdesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__temp {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -105,20 +121,18 @@
   font-weight: bolder;
 }
 .general__pressure {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__pressdesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__press {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -126,20 +140,18 @@
   font-weight: bolder;
 }
 .general__humidity {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__humiddesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__humid {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -147,20 +159,18 @@
   font-weight: bolder;
 }
 .general__wind {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__winddesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__wnd {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -168,20 +178,18 @@
   font-weight: bolder;
 }
 .general__clouds {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__cloudsdesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__clds {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -189,20 +197,18 @@
   font-weight: bolder;
 }
 .general__visibility {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 .general__vsbltdesc {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 1.3rem;
 }
 .general__vsblt {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 250px;
@@ -210,7 +216,6 @@
   font-weight: bolder;
 }
 .general__animationsblock {
-  border: 1px solid red;
   height: 100%;
   width: 50%;
 }

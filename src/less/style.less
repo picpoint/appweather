@@ -1,10 +1,11 @@
 @import "var.less";
+@import "fonts.less";
 
 .gnrlmixin {
   //border: @border;
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .gnrldescmixin {
@@ -12,22 +13,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 
 .gnrlcitymixin {
   //border: @border;
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 
 
 .general {
-  background-color: #b2baba;
+  background-color: #07002a;
   height: 99vh;
   &__wrap {
     display: flex;
@@ -35,6 +37,7 @@
     height: 99vh;
   }
   &__findblock {
+    //border: @border;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,31 +45,43 @@
     height: 30%;
     input {
       border-radius: 5px;
-      width: 350px;
-      height: 30px;
-      font-size: 1.2rem;
+      width: 450px;
+      height: 40px;
+      font-size: 1.4rem;
       padding-left: 15px;
+      margin-top: 100px;
     }
     button {
-      //border: 1px solid black;
-      font-size: 1rem;
-      margin-top: 30px;
-      border-radius: 5px;
-      width: 180px;
-      height: 40px;
+      border: 2px solid white;
+      font-size: 1.3rem;
+      font-weight: bolder;
+      background-color: #07002a;
+      margin-top: 60px;
+      width: 220px;
+      height: 50px;
       cursor: pointer;
       outline: none;
+      color: white;
+      transition: @transitionfast;
+      &:hover {
+        box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25), 0 15px 15px rgba(255, 255, 255, 0.22);
+        transform: scale(1.1, 1.1);
+        transition: @transitionfast;
+      }
     }
   }
   &__showblock {
     //border: @border;
     display: flex;
     height: 70%;
+    color: white;
+    font-family: 'Russo One', sans-serif;
   }
   &__datablock {
     //border: @border;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 50%;
   }

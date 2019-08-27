@@ -1,24 +1,29 @@
+@font-face {
+  font-family: 'Russo One', sans-serif;
+  src: url('../fonts/RussoOne-Regular.ttf');
+}
 .gnrlmixin {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .gnrldescmixin {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .gnrlcitymixin {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general {
-  background-color: #b2baba;
+  background-color: #07002a;
   height: 99vh;
 }
 .general__wrap {
@@ -35,48 +40,62 @@
 }
 .general__findblock input {
   border-radius: 5px;
-  width: 350px;
-  height: 30px;
-  font-size: 1.2rem;
+  width: 450px;
+  height: 40px;
+  font-size: 1.4rem;
   padding-left: 15px;
+  margin-top: 100px;
 }
 .general__findblock button {
-  font-size: 1rem;
-  margin-top: 30px;
-  border-radius: 5px;
-  width: 180px;
-  height: 40px;
+  border: 2px solid white;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  background-color: #07002a;
+  margin-top: 60px;
+  width: 220px;
+  height: 50px;
   cursor: pointer;
   outline: none;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+.general__findblock button:hover {
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25), 0 15px 15px rgba(255, 255, 255, 0.22);
+  transform: scale(1.1, 1.1);
+  transition: ease-in-out 0.3s;
 }
 .general__showblock {
   display: flex;
   height: 70%;
+  color: white;
+  font-family: 'Russo One', sans-serif;
 }
 .general__datablock {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 50%;
 }
 .general__weather {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__weatherdesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__icon {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__icon img {
   width: 60px;
@@ -85,135 +104,142 @@
 .general__name {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__namedesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__nameCity {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__temperaturs {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__tempdesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__temp {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__pressure {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__pressdesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__press {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__humidity {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__humiddesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__humid {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__wind {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__winddesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__wnd {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__clouds {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__cloudsdesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__clds {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__visibility {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .general__vsbltdesc {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size: 1.3rem;
+  width: 220px;
+  font-size: 1.2rem;
 }
 .general__vsblt {
   display: flex;
   justify-content: center;
-  width: 250px;
-  font-size: 1.5rem;
+  width: 270px;
+  font-size: 1.7rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .general__animationsblock {
   height: 100%;

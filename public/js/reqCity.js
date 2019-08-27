@@ -30,7 +30,7 @@ function responseStr () {
       let objJson = JSON.parse(result);
 
       for (let key in objJson) {
-        //console.log(objJson);
+
         if (key == 'weather') {
           let weatherFact = objJson[key][0].main;
 
@@ -64,7 +64,6 @@ function responseStr () {
               break;
           }
 
-          //weatherdesc.innerHTML = objJson[key][0].main;
           let valueSrc = pahtIcon + objJson[key][0].icon + '.png';
           icon.setAttribute('src', valueSrc);
         }
@@ -91,9 +90,7 @@ function responseStr () {
           visibilityCity.innerHTML = objJson[key] + ' м.';
         }
 
-
       }
-
     }
   });
   xhr.send();

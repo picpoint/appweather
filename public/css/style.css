@@ -2,6 +2,9 @@
   font-family: 'Russo One', sans-serif;
   src: url('../fonts/RussoOne-Regular.ttf');
 }
+body {
+  background-color: #07002a;
+}
 .gnrlmixin {
   display: flex;
   justify-content: center;
@@ -13,6 +16,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .gnrldescmixin {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gnrldescmixin {
+    font-size: 0.9rem;
+  }
 }
 .gnrlcitymixin {
   display: flex;
@@ -22,8 +37,17 @@
   font-weight: bolder;
   font-style: italic;
 }
+@media screen and (max-width: 720px) {
+  .gnrlcitymixin {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gnrlcitymixin {
+    font-size: 1rem;
+  }
+}
 .general {
-  background-color: #07002a;
   height: 99vh;
 }
 .general__wrap {
@@ -44,7 +68,21 @@
   height: 40px;
   font-size: 1.4rem;
   padding-left: 15px;
-  margin-top: 100px;
+  margin-top: 50px;
+  transition: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__findblock input {
+    width: 50%;
+    margin-top: 0;
+    transition: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 540px) {
+  .general__findblock input {
+    width: 80%;
+    transition: ease-in-out 0.3s;
+  }
 }
 .general__findblock button {
   border: 2px solid white;
@@ -64,6 +102,14 @@
   transform: scale(1.1, 1.1);
   transition: ease-in-out 0.3s;
 }
+@media screen and (max-width: 720px) {
+  .general__findblock button {
+    width: 180px;
+    height: 45px;
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+}
 .general__showblock {
   display: flex;
   height: 70%;
@@ -75,7 +121,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 .general__weather {
   display: flex;
@@ -83,11 +129,24 @@
   margin: 15px 0;
 }
 .general__weatherdesc {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__weatherdesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__weatherdesc {
+    font-size: 0.9rem;
+  }
 }
 .general__icon {
   display: flex;
@@ -96,6 +155,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__icon {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__icon {
+    font-size: 1rem;
+  }
 }
 .general__icon img {
   width: 60px;
@@ -112,6 +181,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__namedesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__namedesc {
+    font-size: 0.9rem;
+  }
 }
 .general__nameCity {
   display: flex;
@@ -120,6 +201,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__nameCity {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__nameCity {
+    font-size: 1rem;
+  }
 }
 .general__temperaturs {
   display: flex;
@@ -132,6 +223,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__tempdesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__tempdesc {
+    font-size: 0.9rem;
+  }
 }
 .general__temp {
   display: flex;
@@ -140,6 +243,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__temp {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__temp {
+    font-size: 1rem;
+  }
 }
 .general__pressure {
   display: flex;
@@ -152,6 +265,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__pressdesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__pressdesc {
+    font-size: 0.9rem;
+  }
 }
 .general__press {
   display: flex;
@@ -160,6 +285,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__press {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__press {
+    font-size: 1rem;
+  }
 }
 .general__humidity {
   display: flex;
@@ -172,6 +307,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__humiddesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__humiddesc {
+    font-size: 0.9rem;
+  }
 }
 .general__humid {
   display: flex;
@@ -180,6 +327,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__humid {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__humid {
+    font-size: 1rem;
+  }
 }
 .general__wind {
   display: flex;
@@ -192,6 +349,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__winddesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__winddesc {
+    font-size: 0.9rem;
+  }
 }
 .general__wnd {
   display: flex;
@@ -200,6 +369,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__wnd {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__wnd {
+    font-size: 1rem;
+  }
 }
 .general__clouds {
   display: flex;
@@ -212,6 +391,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__cloudsdesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__cloudsdesc {
+    font-size: 0.9rem;
+  }
 }
 .general__clds {
   display: flex;
@@ -220,6 +411,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+}
+@media screen and (max-width: 720px) {
+  .general__clds {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__clds {
+    font-size: 1rem;
+  }
 }
 .general__visibility {
   display: flex;
@@ -232,6 +433,18 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: ease-in-out 0.3s;
+}
+@media screen and (max-width: 720px) {
+  .general__vsbltdesc {
+    font-size: 1rem;
+    transform: ease-in-out 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__vsbltdesc {
+    font-size: 0.9rem;
+  }
 }
 .general__vsblt {
   display: flex;
@@ -241,7 +454,13 @@
   font-weight: bolder;
   font-style: italic;
 }
-.general__animationsblock {
-  height: 100%;
-  width: 50%;
+@media screen and (max-width: 720px) {
+  .general__vsblt {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .general__vsblt {
+    font-size: 1rem;
+  }
 }

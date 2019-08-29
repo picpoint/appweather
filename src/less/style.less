@@ -1,5 +1,10 @@
 @import "var.less";
 @import "fonts.less";
+@import "smart-grid.less";
+
+body {
+  background-color: #07002a;
+}
 
 .gnrlmixin {
   display: flex;
@@ -13,6 +18,14 @@
   align-items: center;
   width: 220px;
   font-size: 1.2rem;
+  transform: @transitionfast;
+  .md-block({
+    font-size: 1rem;
+    transform: @transitionfast;
+  });
+  .xs-block({
+    font-size: 0.9rem;
+  });
 }
 
 .gnrlcitymixin {
@@ -22,11 +35,16 @@
   font-size: 1.7rem;
   font-weight: bolder;
   font-style: italic;
+  .md-block({
+    font-size: 1.4rem;
+  });
+  .xs-block({
+    font-size: 1rem;
+  });
 }
 
 
 .general {
-  background-color: #07002a;
   height: 99vh;
   &__wrap {
     display: flex;
@@ -34,7 +52,6 @@
     height: 99vh;
   }
   &__findblock {
-    //border: @border;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +63,17 @@
       height: 40px;
       font-size: 1.4rem;
       padding-left: 15px;
-      margin-top: 100px;
+      margin-top: 50px;
+      transition: @transitionfast;
+      .md-block({
+        width: 50%;
+        margin-top: 0;
+        transition: @transitionfast;
+      });
+      .sm-block({
+        width: 80%;
+        transition: @transitionfast;
+      });
     }
     button {
       border: 2px solid white;
@@ -65,28 +92,33 @@
         transform: scale(1.1, 1.1);
         transition: @transitionfast;
       }
+      .md-block({
+        width: 180px;
+        height: 45px;
+        margin-top: 30px;
+        font-size: 1rem;
+      });
     }
   }
   &__showblock {
-    //border: @border;
     display: flex;
     height: 70%;
     color: white;
     font-family: 'Russo One', sans-serif;
   }
   &__datablock {
-    //border: @border;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 50%;
+    width: 100%;
   }
 
   &__weather {
     .gnrlmixin();
   }
   &__weatherdesc {
+    text-align: center;
     .gnrldescmixin();
   }
   &__icon {
@@ -165,17 +197,6 @@
   }
   &__vsblt {
     .gnrlcitymixin();
-  }
-
-
-
-
-
-
-  &__animationsblock {
-    //border: @border;
-    height: 100%;
-    width: 50%;
   }
 
 }

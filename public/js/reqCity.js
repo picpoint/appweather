@@ -11,8 +11,6 @@ const cloudsCity = document.querySelector('.general__clds');
 const visibilityCity = document.querySelector('.general__vsblt');
 const weatherdesc = document.querySelector('.general__weatherdesc');
 const icon = document.querySelector('.general__icon').firstElementChild;
-
-
 const pahtIcon = 'https://openweathermap.org/img/wn/';
 const key = 'b13322108a6798e54b547c8d1708f1c2';
 const uri = 'http://api.openweathermap.org/data/2.5/weather?q=';
@@ -95,8 +93,14 @@ function responseStr () {
   });
   xhr.send();
 
-
 }
 
 btn.addEventListener('click', responseStr);
+
+input.addEventListener('keypress', function (e) {
+  if (e.keyCode == 13) {
+    responseStr();
+  }
+});
+
 

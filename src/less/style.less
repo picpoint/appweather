@@ -43,13 +43,56 @@ body {
   });
 }
 
+.btnmixin {
+  border: 2px solid white;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  background-color: #07002a;
+  margin-top: 60px;
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  transition: @transitionfast;
+  &:hover {
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25), 0 15px 15px rgba(255, 255, 255, 0.22);
+    transform: scale(1.1, 1.1);
+    transition: @transitionfast;
+  }
+}
+
 
 .general {
   height: 99vh;
+  overflow: hidden;
   &__wrap {
     display: flex;
     flex-direction: column;
     height: 99vh;
+  }
+  &__popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-weight: bolder;
+    span {
+      font-size: 2.5rem;
+    }
+  }
+  &__btnYes {
+    .btnmixin();
+  }
+  &__btnNo {
+    .btnmixin();
   }
   &__findblock {
     display: flex;
@@ -76,22 +119,7 @@ body {
       });
     }
     button {
-      border: 2px solid white;
-      font-size: 1.3rem;
-      font-weight: bolder;
-      background-color: #07002a;
-      margin-top: 60px;
-      width: 220px;
-      height: 50px;
-      cursor: pointer;
-      outline: none;
-      color: white;
-      transition: @transitionfast;
-      &:hover {
-        box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25), 0 15px 15px rgba(255, 255, 255, 0.22);
-        transform: scale(1.1, 1.1);
-        transition: @transitionfast;
-      }
+      .btnmixin();
       .md-block({
         width: 180px;
         height: 45px;

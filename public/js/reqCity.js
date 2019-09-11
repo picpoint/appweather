@@ -14,10 +14,51 @@ const icon = document.querySelector('.general__icon').firstElementChild;
 const pahtIcon = 'https://openweathermap.org/img/wn/';
 const key = 'b13322108a6798e54b547c8d1708f1c2';
 const uri = 'http://api.openweathermap.org/data/2.5/weather?q=';
+const uricoords = 'http://api.openweathermap.org/data/2.5/weather?';
+let cityField = document.querySelector('.general__yourCity');
+const btnYes = document.querySelector('.general__btnYes');
+const btnNo = document.querySelector('.general__btnNo');
+const popup = document.querySelector('.general__popup');
+let city = '';
+
+
+
+window.addEventListener('load', (e) => {
+  if (e.type == 'load') {
+    navigator.geolocation.getCurrentPosition((position) => {
+      let lat = (position.coords.latitude).toFixed(2);
+      let lng = (position.coords.longitude).toFixed(2);
+
+      const xhr = new XMLHttpRequest();
+      const urlcoords = uricoords + 'lat=' + lat + '&' + 'lon=' + lng + '&appid=b13322108a6798e54b547c8d1708f1c2';
+      xhr.open('GET', urlcoords);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.addEventListener('readystatechange', () => {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          let resultCoords = xhr.responseText;
+          let objCoords = JSON.parse(resultCoords);
+
+          for (let key in objCoords) {
+            if (key == 'name') {
+              city = objCoords.name;
+              cityField.innerHTML = city;
+            }
+          }
+
+        }
+      });
+      xhr.send();
+    });
+  } else {
+    cityField.innerHTML = 'Страница по определённым проблемам не загрузилась до конца ... ';
+  }
+});
+
+
 
 
 function responseStr () {
-  const cityName = input.value;
+  const cityName = input.value || city;
   const xhr = new XMLHttpRequest();
   const url = uri + cityName + '&appid=b13322108a6798e54b547c8d1708f1c2';
   xhr.open('GET', url);
@@ -97,10 +138,22 @@ function responseStr () {
 
 btn.addEventListener('click', responseStr);
 
+btnYes.addEventListener('click', () => {
+  popup.style.display = 'none';
+  responseStr();
+});
+
+btnNo.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
 input.addEventListener('keypress', function (e) {
-  if (e.keyCode == 13) {
+  if (e.keyCode === 13) {
     responseStr();
   }
 });
+
+
+
 
 
